@@ -26,9 +26,18 @@ while True:
     print("Provide an Alpha value...")
     continue
 
-
-def choose_word(words):
+"""
+Pull random word
+"""
+def choose_word():
     word = random.choice(words)
     return word.upper()
     print(word)
-    print('\n')
+
+def play(word):
+    word_completion = "_" * len(word)
+    guessed = False
+    guessed_letters = []
+    guessed_words = []
+    tries = 6 
+      
