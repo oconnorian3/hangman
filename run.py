@@ -10,8 +10,6 @@ from words import words
 """
 Welcome message, plus name validator. 
 """
-
-
 startgame = print("How to play. Hangman is a simple word guessing game. Players try to figure out an unknown word by guessing letters. If too many letters which do not appear in the word are guessed, the player is hanged and loses")
 
 while True:
@@ -19,7 +17,7 @@ while True:
     name = input('What is your name?').upper()
     if name.isalpha():
       print('Hi', name, 'Lets play Hangman!')
-      break;
+      break 
     else:
       print("Invalid Name")      
   except ValueError:
@@ -31,13 +29,10 @@ Pull random word
 """
 def choose_word():
     word = random.choice(words)
-    return word.upper()
-    print(word)
+    while '_' in word or ' ' in word:
+        word = random.choice(words)
 
-def play(word):
-    word_completion = "_" * len(word)
-    guessed = False
-    guessed_letters = []
-    guessed_words = []
-    tries = 6 
+    return word
+
+
       
