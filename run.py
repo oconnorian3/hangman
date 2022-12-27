@@ -31,10 +31,10 @@ Pull random word
 
 def choose_word(words):
     word = random.choice(words)
-    while '_' in word or ' ' in word:
+    while "_" in word or " "  in word:
         word = random.choice(words)
 
-    return word
+    return word.upper()
 """
 Validate letter and track that is was used
 """
@@ -43,17 +43,20 @@ def hangman ():
     word_letter = set(word)
     alphabet = set(string.ascii_uppercase)
     used_letters = set()
+
+    lives = 6
  
-   while len (word_letters) > 0:
-       print ("You already used: ", " ".join(used_letters)) 
+    while len(word_letters) > 0:
+        print ("You already used: ", " ".join(used_letters)) 
 
-       word_list = [letter f for letter in word]
+        word_list = [letter if letter in used_letters else "_" for letter in word]
+        print("Current Word: "," ".join(word_list))
 
-    user_letter = input ("Guess a letter").upper()
-    if user_letter in alphabet - used_letters:
-        used_letters.add(user_letter)
-        if user_letter in word_letters:
-            word_letters.remove(user_letter)   
+        user_letter = input ("Guess a letter").upper()
+        if user_letter in alphabet - used_letters:
+            used_letters.add(user_letter)
+            if user_letter in word_letters:
+                word_letters.remove(user_letter)   
 
     elif user_letter in used_letters:
         print ("Letter already used. Please try again")
@@ -61,8 +64,3 @@ def hangman ():
     else:
         print("Invalid Character, Please Try again")               
  
-user_input = input("Test")
-print(user_input)        
-
-
-      
