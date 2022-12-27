@@ -6,6 +6,7 @@ Imports
 """
 import random
 from words import words
+import string 
 
 """
 Welcome message, plus name validator. 
@@ -38,14 +39,30 @@ def choose_word(words):
 Validate letter and track that is was used
 """
 def hangman ():
-    word = get_valid_word(words)
+    word = choose_word(words)
     word_letter = set(word)
     alphabet = set(string.ascii_uppercase)
     used_letters = set()
+ 
+   while len (word_letters) > 0:
+       print ("You already used: ", " ".join(used_letters)) 
 
-user_input = input("Type letter here:")   
-print (user_input)   
-        
+       word_list = [letter f for letter in word]
+
+    user_letter = input ("Guess a letter").upper()
+    if user_letter in alphabet - used_letters:
+        used_letters.add(user_letter)
+        if user_letter in word_letters:
+            word_letters.remove(user_letter)   
+
+    elif user_letter in used_letters:
+        print ("Letter already used. Please try again")
+
+    else:
+        print("Invalid Character, Please Try again")               
+ 
+user_input = input("Test")
+print(user_input)        
 
 
       
