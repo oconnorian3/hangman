@@ -7,6 +7,7 @@ Imports
 import random
 from words import words
 import string 
+from visual import hangman_drawing
 
 """
 Welcome message, plus name validator. 
@@ -44,12 +45,13 @@ def hangman ():
     alphabet = set(string.ascii_uppercase)
     used_letters = set()
 
-    lives = 6
+    lives = 7
  
     while len(word_letter) > 0 and lives > 0:
         print ("You have", lives, "lives left and the following letters have been used ", ' '.join(used_letters)) 
 
         word_list = [letter if letter in used_letters else '_' for letter in word]
+        print(hangman_drawing[lives])
         print('Current Word: ', ' '.join(word_list))
 
         user_letter = input ("Guess a letter").upper()
@@ -70,10 +72,10 @@ def hangman ():
             print("\nInvalid Character, Please Try again") 
 
     if lives == 0:
-        print(lives_visual_dict[lives])
+        print(hangman_drawing[lives])
         print('You died, sorry. The word was', word)
     else:
-        print('YAY! You guessed the word', word, '!!')
+        print('Congratualtions! You guessed the word', word, '!!')
 
 
 if __name__ == '__main__':
