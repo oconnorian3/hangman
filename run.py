@@ -27,12 +27,25 @@ while True:
 """
 Pull random word
 """
-def choose_word():
+
+def choose_word(words):
     word = random.choice(words)
     while '_' in word or ' ' in word:
         word = random.choice(words)
 
     return word
+"""
+Validate letter and track that is was used
+"""
+def hangman ():
+    word = get_valid_word(words)
+    word_letter = set(word)
+    alphabet = set(string.ascii_uppercase)
+    used_letters = set()
+
+user_input = input("Type letter here:")   
+print (user_input)   
+        
 
 
       
