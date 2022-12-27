@@ -16,7 +16,7 @@ startgame = print("How to play. Hangman is a simple word guessing game. Players 
 
 while True:
   try:
-    name = input('What is your name?').upper()
+    name = input('What is your name?\n').upper()
     if name.isalpha():
       print('Hi', name, 'Lets play Hangman!')
       break 
@@ -54,7 +54,7 @@ def hangman ():
         print(hangman_drawing[lives])
         print('Current Word: ', ' '.join(word_list))
 
-        user_letter = input ("Guess a letter").upper()
+        user_letter = input("Guess a letter:\n").upper()
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
             if user_letter in word_letter:
