@@ -1,6 +1,3 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows hig
 """
 Imports
 """
@@ -10,7 +7,7 @@ import string
 from visual import hangman_drawing
 
 """
-Welcome message, plus name validator. 
+Welcome message, plus name validator.
 """
 startgame = print(
     "How to play. Hangman is a simple word guessing game." 
@@ -51,7 +48,7 @@ def hangman ():
     lives = 7
  
     while len(word_letter) > 0 and lives > 0:
-        print ("You have", lives, "lives left and the following letters have been used ", ' '.join(used_letters)) 
+        print("You have", lives, "lives left and the following letters have been used ", ' '.join(used_letters)) 
 
         word_list = [letter if letter in used_letters else '_' for letter in word]
         print(hangman_drawing[lives])
