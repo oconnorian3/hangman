@@ -8,6 +8,7 @@ from visual import hangman_drawing
 import colorama
 from colorama import Fore, Style
 colorama.init(autoreset=True)
+import os
 
 """
 Start game function
@@ -82,9 +83,17 @@ def hangman ():
     user_input = input("Would you like to play hangman again? Type 'Yes' or 'No'\n\n")
 
     if user_input.lower() == "no": 
-        return False
+        quit()
     elif user_input.lower() == "yes":
+        clr_terminal()
         hangman()    
+
+def clr_terminal():
+
+    """
+   Function to clear screen.
+    """
+    os.system('clear')        
 
 
 if __name__ == '__main__':
