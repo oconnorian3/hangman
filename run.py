@@ -7,10 +7,10 @@ import string
 from visual import hangman_drawing
 
 """
-Welcome message, plus name validator.
+Start game function
 """
 def startgame ():
-    startgame = print("How to play. Hangman is a simple word guessing game. Players try to figure out an unknown word by guessing letters. If too many letters which do not appear in the word are guessed, the player is hanged and loses")
+    startgame = print("How to play. Hangman is a simple word guessing game.\n Players try to figure out an unknown word by guessing letters.\n If too many letters which do not appear in the word are guessed,\n the player is hanged and loses")
 
     while True:
       try:
@@ -34,7 +34,7 @@ def choose_word(words):
 
     return word.upper()
 """
-Validate letter and track that is was used
+Function to begin the game itself
 """
 def hangman ():
     word = choose_word(words)
@@ -73,9 +73,16 @@ def hangman ():
         print('You died, sorry. The word was', word)
     else:
         print('Congratualtions! You guessed the word', word, '!!')
+    #Gives user option to restart game
+    user_input = input("Would you like to play again? Type 'Yes' or 'No'\n\n")
+
+    if user_input.lower() == "no": 
+        return False
+    elif user_input.lower() == "yes":
+        hangman()    
 
 
 if __name__ == '__main__':
     startgame()
-    hangman()              
+    hangman()             
  
