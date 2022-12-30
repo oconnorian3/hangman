@@ -1,6 +1,3 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows hig
 """
 Imports
 """
@@ -10,23 +7,21 @@ import string
 from visual import hangman_drawing
 
 """
-Welcome message, plus name validator. 
+Welcome message, plus name validator.
 """
+startgame = print("How to play. Hangman is a simple word guessing game. Players try to figure out an unknown word by guessing letters. If too many letters which do not appear in the word are guessed, the player is hanged and loses")
 
-def startgame ():
-    startgame = print("How to play. Hangman is a simple word guessing game. Players try to figure out an unknown word by guessing letters. If too many letters which do not appear in the word are guessed, the player is hanged and loses")
-
-    while True:
-      try:
-        name = input('What is your name?\n').upper()
-        if name.isalpha():
-            print('Hi', name, 'Lets play Hangman!')
-            break    
-        else:
-            print("Invalid Name")      
-      except ValueError:
-            print("Provide an Alpha value...")
-      continue
+while True:
+  try:
+    name = input('What is your name?\n').upper()
+    if name.isalpha():
+      print('Hi', name, 'Lets play Hangman!')
+      break 
+    else:
+      print("Invalid Name")      
+  except ValueError:
+    print("Provide an Alpha value...")
+    continue
 
 """
 Pull random word
@@ -50,7 +45,7 @@ def hangman ():
     lives = 7
  
     while len(word_letter) > 0 and lives > 0:
-        print ("You have", lives, "lives left and the following letters have been used ", ' '.join(used_letters)) 
+        print("You have", lives, "lives left and the following letters have been used ", ' '.join(used_letters)) 
 
         word_list = [letter if letter in used_letters else '_' for letter in word]
         print(hangman_drawing[lives])
@@ -81,6 +76,5 @@ def hangman ():
 
 
 if __name__ == '__main__':
-    startgame()
     hangman()              
  

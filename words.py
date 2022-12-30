@@ -41,6 +41,5 @@ words = [
     'back',
     'freeze',
     'dictionary',
-    'sublime list',
     'draw',
     ]
