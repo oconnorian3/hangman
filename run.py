@@ -5,6 +5,9 @@ import random
 from words import words
 import string 
 from visual import hangman_drawing
+import colorama
+from colorama import Fore, Style
+colorama.init(autoreset=True)
 
 """
 Start game function
@@ -16,10 +19,10 @@ def startgame ():
       try:
         name = input('What is your name?\n').upper()
         if name.isalpha():
-            print('Hi', name, 'Lets play Hangman!')
+            print(Fore.LIGHTGREEN_EX +'Hi',Fore.LIGHTGREEN_EX + name, Fore.LIGHTGREEN_EX +'Lets play Hangman!')
             break    
         else:
-            print("Invalid Name")      
+            print(Fore.RED + "Invalid Name")      
       except ValueError:
             print("Provide an Alpha value...")
       continue
@@ -70,11 +73,13 @@ def hangman ():
 
     if lives == 0:
         print(hangman_drawing[lives])
-        print('You died, sorry. The word was', word)
+        print(Fore.RED + 'You died, sorry. The word was', word)
     else:
-        print('Congratualtions! You guessed the word', word, '!!')
-    #Gives user option to restart game
-    user_input = input("Would you like to play again? Type 'Yes' or 'No'\n\n")
+        print(Fore.LIGHTGREEN_EX +'Woo Hoo !!! You guessed the word', word, '!!')
+    """
+    Gives user option to restart game
+    """
+    user_input = input("Would you like to play hangman again? Type 'Yes' or 'No'\n\n")
 
     if user_input.lower() == "no": 
         return False
