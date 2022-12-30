@@ -1,35 +1,40 @@
 """
 Imports
 """
+import os
 import random
 from words import words
-import string 
+import string
 from visual import hangman_drawing
 import colorama
 from colorama import Fore, Style
 colorama.init(autoreset=True)
-import os
 
 """
 Start game function
 """
-def startgame ():
+
+
+def startgame():
     startgame = print("How to play. Hangman is a simple word guessing game.\n Players try to figure out an unknown word by guessing letters.\n If too many letters which do not appear in the word are guessed,\n the player is hanged and loses")
 
     while True:
-      try:
-        name = input('What is your name?\n').upper()
-        if name.isalpha():
-            print(Fore.LIGHTGREEN_EX +'Hi',Fore.LIGHTGREEN_EX + name, Fore.LIGHTGREEN_EX +'Lets play Hangman!')
-            break    
-        else:
-            print(Fore.RED + "Invalid Name")      
-      except ValueError:
+        try:
+            name = input('What is your name?\n').upper()
+            if name.isalpha():
+                print(Fore.LIGHTGREEN_EX + 'Hi', Fore.LIGHTGREEN_EX + name, Fore.LIGHTGREEN_EX + 'Lets play Hangman!')
+                break
+            else:
+                print(Fore.RED + "Invalid Name")
+        except ValueError:
             print("Provide an Alpha value...")
-      continue
+        continue
+
+
 """
 Pull random word
 """
+
 
 def choose_word(words):
     word = random.choice(words)
@@ -40,14 +45,16 @@ def choose_word(words):
 """
 Function to begin the game itself
 """
-def hangman ():
+
+
+def hangman():
     word = choose_word(words)
     word_letter = set(word)
     alphabet = set(string.ascii_uppercase)
     used_letters = set()
 
     lives = 7
- 
+
     while len(word_letter) > 0 and lives > 0:
         print("You have", lives, "lives left and the following letters have been used ", ' '.join(used_letters)) 
 
