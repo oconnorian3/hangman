@@ -76,5 +76,6 @@ def hangman ():
 
 
 if __name__ == '__main__':
+    startgame()
     hangman()              
  
