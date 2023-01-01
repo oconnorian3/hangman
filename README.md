@@ -44,28 +44,15 @@ This is an application built using python which allows the user play a game of H
  
 # Testing #
 
-   * This site works in different browsers, Chrome , Safari & Firefox
-
-   **Firefox**
-![](assets/images/screenshotofheader.png)
-
-   **Chrome**
-![](assets/images/chromeimage.png)
-
-   **Safari**
-![](assets/images/safari.png)
-
-   * The site is responsive and reacts well to different screen sizes.
-   * I confirmed that the navigational links work, are easy to understand and all content text is readable.
-   * I confirmed the form does work, each box must be filled otherwise the form will not submit. Also the email field must show a valid email or the form will not send.
+   * This site works in thebrowsers, Chrome & Firefox. It does not run in Safari which looks to be a common issue with Heroku and Safari (sample thread ,many more) https://stackoverflow.com/questions/69526899/heroku-application-not-accessible-on-safari
+   * I confirmed that the game gives clear instructions and the flow of the game meakes sense
+   * I confirmed that the functions all work as designed and corretly give the expected responses to the user.
 
 **Bugs** 
 
 *Solved Problems*
 
-   * The background in the about us section caused the about us header to become unreadable. Creating a darker backgrouynd solved this
-   * On a smaller screen a bit white space formed between the about us section and the main video banner. This was becasue I had a height define for the video and removing this fixed it. 
-   * The text in the about us section lost its bullet points on smaller screens. Converting a pixel margin setting to em solved this.
+   * Heroku deploys started to fail . This was due to me adding a dependency to the requirements.txt file using an incorrect syntax. Heroku did not recognise the dependency and failed to deploy as a result. Reading the Heroku build logs gave an error which prompted me to double checy the syntax.
 
 **Validator Testing**
 
@@ -96,18 +83,23 @@ https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Foconnorian3.gith
 
 # Deployment #
 
-**The site was deployed to GitHub pages. The steps to deploy are as follows:**
-   * In the GitHub repository, navigate to the Settings tab
-   * From the source section drop-down menu, select the Master Branch
-   * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+**The application was deployed to Heroku. The steps to deploy are as follows:** 
 
-   * The live link can be found here - https://oconnorian3.github.io/allthingsspace
+    1. I logged into my personal Heroku account page, select Create new app, give a name to the new app, choose a region from the drop down list toEurope. Then click Create app.
+
+    2. Go to the Settings tab afterwards, click Add buildpack button on the right side of the Buildpacks section, first select python and add it, then select nodejs and add it.
+    
+    3. Go to the Deploy tab, click GitHub in the Deployment method section, search for the repo on GitHub, click Connect.
+
+    4. In the Manual deploy section, seclect main and then click Deploy Branch button, the app was successfully deployed after a while.
+
+    5. Click the View button on the bottom of the page or the Open app button on the top right corner to view the programme.
+
+    6.  The live link can be found here - https://hangmaniano.herokuapp.com/
 
 # Credits #
 
-**Content** 
-   * The main code for the social media links was taken from the I love running project.
+* Content
 
-**Media**
-
-   * The video and all images was taken from pexels.com
+  * Watched a tutrial by [Kylie Ying](https://www.youtube.com/watch?v=cJJTnI22IF8&list=PLqoebFJFAtg940mqPamWw4_ndWbnfqFqh)
+  
