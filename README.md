@@ -15,7 +15,9 @@ This is an application built using python which allows the user play a game of H
     * Once the game begins the user is given a breakdown on how to play the game and is prpmpted to enter their name
 ![](assets/images/startgame.png)
     * If the user uses a non alpha character they recevie the below message,
+
 ![](assets/images/invalidname.png)
+
     * If the user enters a valid name they will see the below,
 ![](assets/images/validname.png)
     * Once the game begins the copmputer will pick a random word from a list of 50 seen in the word.py file. the user will then be able to guess the correct letters. The user will be allowed 7 incorrect answers . Each incorrect answer will add an element to the hangman illustration . If the player looses the familiar hangman illustration will complete along with a messagecrevealing the word.
