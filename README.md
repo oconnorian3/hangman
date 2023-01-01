@@ -44,7 +44,7 @@ This is an application built using python which allows the user play a game of H
  
 # Testing #
 
-  * This site works in thebrowsers, Chrome & Firefox. It does not run in Safari which looks to be a common issue with Heroku and Safari (sample thread ,many more) https://stackoverflow.com/questions/69526899/heroku-application-not-accessible-on-safari
+   * This site works in thebrowsers, Chrome & Firefox. It does not run in Safari which looks to be a common issue with Heroku and Safari (sample thread ,many more) https://stackoverflow.com/questions/69526899/heroku-application-not-accessible-on-safari
    * I confirmed that the game gives clear instructions and the flow of the game meakes sense
    * I confirmed that the functions all work as designed and corretly give the expected responses to the user.
 
@@ -103,3 +103,4 @@ https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Foconnorian3.gith
 
   * Watched a tutorial by [Kylie Ying](https://www.youtube.com/watch?v=cJJTnI22IF8&list=PLqoebFJFAtg940mqPamWw4_ndWbnfqFqh) on YouTube
   
+  * Used the site [Random Word Generator](https://randomwordgenerator.com) to generate a list of 50 randowm words for the word.py file.
