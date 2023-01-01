@@ -1,31 +1,98 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Hangman #
 
-Welcome oconnorian3,
+This is an application built using python which allows the user play a game of Hangman. The user has 7 lives to guess the word correctly.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+![](assets/images/responsivness.png)
 
-## Reminders
+## UX/UI ##
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+   * This is an application run over a python terminal with easy to follow instructions to get started. 
 
-## Creating the Heroku app
+## Features ##
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+ * Navigation
 
-1. `heroku/python`
-2. `heroku/nodejs`
+    * Once the game begins the user is given a breakdown on how to play the game and is prpmpted to enter their name
+    ![](assets/images/startgame.png)
+    * If the user uses a non alpha character they recevie the below message,
+    ![](assets/images/invalidname.png)
+      If the user enters a valid name they will see the below,
+      ![](assets/images/validname.png)
+    * Once the game begins the copmputer will pick a random word from a list of 50 seen in the word.py file. the user will then be able to guess the correct letters. The user will be allowed 7 incorrect answers . Each incorrect answer will add an element to the hangman illustration . If the player looses the familiar hangman illustration will complete along with a messagecrevealing the word.
+    ![](assets/images/loosingmessage.png)
+      If the user wins the will see the below message.
+    ![](assets/images/wingame.png)  
+    * The users lives are kept track off during the game.
+    * If the user enters a non alpha value or repeat a previous guess the game will not accept the answer and will ask them to guess again. 
+![](assets/images/errormsg.png)
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+ 
+# Testing #
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+   * This site works in different browsers, Chrome , Safari & Firefox
 
-Connect your GitHub repository and deploy as normal.
+   **Firefox**
+![](assets/images/screenshotofheader.png)
 
-## Constraints
+   **Chrome**
+![](assets/images/chromeimage.png)
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+   **Safari**
+![](assets/images/safari.png)
 
------
-Happy coding!
+   * The site is responsive and reacts well to different screen sizes.
+   * I confirmed that the navigational links work, are easy to understand and all content text is readable.
+   * I confirmed the form does work, each box must be filled otherwise the form will not submit. Also the email field must show a valid email or the form will not send.
+
+**Bugs** 
+
+*Solved Problems*
+
+   * The background in the about us section caused the about us header to become unreadable. Creating a darker backgrouynd solved this
+   * On a smaller screen a bit white space formed between the about us section and the main video banner. This was becasue I had a height define for the video and removing this fixed it. 
+   * The text in the about us section lost its bullet points on smaller screens. Converting a pixel margin setting to em solved this.
+
+**Validator Testing**
+
+* HTML
+   * No errors were retuned when passing through the official W3C validator
+
+```
+https://validator.w3.org/nu/?doc=https%3A%2F%2Foconnorian3.github.io%2Fallthingsspace%2Fyourimages.html
+```
+```
+https://validator.w3.org/nu/?doc=https%3A%2F%2Foconnorian3.github.io%2Fallthingsspace%2Fcontactus.html
+```
+```
+https://validator.w3.org/nu/?doc=https%3A%2F%2Foconnorian3.github.io%2Fallthingsspace%2Findex.html
+```
+
+* CSS
+   * No errors were retuned when passing through the official (Jigsaw) validator
+
+```
+https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Foconnorian3.github.io%2Fallthingsspace%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
+```
+    
+* Accessibility
+   * The colours and fonts are easy to read by passing it through the lighthouse in dev tools.
+
+![](assets/images/Lighouthouse-score.png)     
+
+# Deployment #
+
+**The site was deployed to GitHub pages. The steps to deploy are as follows:**
+   * In the GitHub repository, navigate to the Settings tab
+   * From the source section drop-down menu, select the Master Branch
+   * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+   * The live link can be found here - https://oconnorian3.github.io/allthingsspace
+
+# Credits #
+
+**Content** 
+   * The main code for the social media links was taken from the I love running project.
+
+**Media**
+
+   * The video and all images was taken from pexels.com

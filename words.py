@@ -42,4 +42,10 @@ words = [
     'freeze',
     'dictionary',
     'draw',
+    'alphabet',
+    'laptop',
+    'television',
+    'zoo',
+    'poise',
+    'shelter',
     ]
