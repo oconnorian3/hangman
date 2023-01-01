@@ -85,21 +85,21 @@ https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Foconnorian3.gith
 
 **The application was deployed to Heroku. The steps to deploy are as follows:** 
 
-    1. I logged into my personal Heroku account page, select Create new app, give a name to the new app, choose a region from the drop down list toEurope. Then click Create app.
+       1. I logged into my personal Heroku account page, select Create new app, give a name to the new app, choose a region from the drop down list toEurope. Then click Create app.
 
-    2. Go to the Settings tab afterwards, click Add buildpack button on the right side of the Buildpacks section, first select python and add it, then select nodejs and add it.
+       2. Go to the Settings tab afterwards, click Add buildpack button on the right side of the Buildpacks section, first select python and add it, then select nodejs and add it.
     
-    3. Go to the Deploy tab, click GitHub in the Deployment method section, search for the repo on GitHub, click Connect.
+       3. Go to the Deploy tab, click GitHub in the Deployment method section, search for the repo on GitHub, click Connect.
 
-    4. In the Manual deploy section, seclect main and then click Deploy Branch button, the app was successfully deployed after a while.
+       4. In the Manual deploy section, seclect main and then click Deploy Branch button, the app was successfully deployed after a while.
 
-    5. Click the View button on the bottom of the page or the Open app button on the top right corner to view the programme.
+       5. Click the View button on the bottom of the page or the Open app button on the top right corner to view the programme.
 
-    6.  The live link can be found here - https://hangmaniano.herokuapp.com/
+       6.  The live link can be found here - https://hangmaniano.herokuapp.com/
 
 # Credits #
 
 * Content
 
-  * Watched a tutrial by [Kylie Ying](https://www.youtube.com/watch?v=cJJTnI22IF8&list=PLqoebFJFAtg940mqPamWw4_ndWbnfqFqh)
+  * Watched a tutorial by [Kylie Ying](https://www.youtube.com/watch?v=cJJTnI22IF8&list=PLqoebFJFAtg940mqPamWw4_ndWbnfqFqh) on YouTube
   
