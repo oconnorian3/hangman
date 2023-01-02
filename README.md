@@ -12,11 +12,11 @@ This is an application built using python which allows the user play a game of H
 
  * Navigation
 
-    * Once the game begins the user is given a breakdown on how to play the game and is prpmpted to enter their name
+    * Once the game begins the user is given a breakdown on how to play the game and is prpompted to enter their name
 
     ![](assets/images/startgame.png)
 
-    * If the user uses a non alpha character they recevie the below message,
+    * If the user uses a non alpha character they receive the below message,
 
     ![](assets/images/invalidname.png)
 
@@ -24,7 +24,7 @@ This is an application built using python which allows the user play a game of H
 
     ![](assets/images/validname.png)
 
-    * Once the game begins the copmputer will pick a random word from a list of 50 seen in the word.py file. the user will then be able to guess the correct letters. The user will be allowed 7 incorrect answers . Each incorrect answer will add an element to the hangman illustration . If the player looses the familiar hangman illustration will complete along with a messagecrevealing the word.
+    * Once the game begins the copmputer will pick a random word from a list of 50 seen in the word.py file. The user will then be able to guess the correct letters. The user will be allowed 7 incorrect answers . Each incorrect answer will add an element to the hangman illustration . If the player looses the familiar hangman illustration will complete along with a message revealing the word.
 
     ![](assets/images/loosingmessage.png)
 
@@ -33,7 +33,7 @@ This is an application built using python which allows the user play a game of H
     ![](assets/images/wingame.png)  
 
     * The users lives are kept track off during the game.
-    * If the user enters a non alpha value or repeat a previous guess the game will not accept the answer and will ask them to guess again. 
+    * If the user enters a non alpha value or repeats a previous guess the game will not accept the answer and will ask them to guess again. 
 
     ![](assets/images/errormsg.png)
 
@@ -44,7 +44,7 @@ This is an application built using python which allows the user play a game of H
  
 # Testing #
 
-   * This site works in thebrowsers, Chrome & Firefox. It does not run in Safari which looks to be a common issue with Heroku and Safari (sample thread ,many more) https://stackoverflow.com/questions/69526899/heroku-application-not-accessible-on-safari
+   * This site works in the browsers, Chrome & Firefox. It does not run in Safari which looks to be a common issue with Heroku and Safari (sample thread ,many more) https://stackoverflow.com/questions/69526899/heroku-application-not-accessible-on-safari
    * I confirmed that the game gives clear instructions and the flow of the game meakes sense
    * I confirmed that the functions all work as designed and corretly give the expected responses to the user.
 
@@ -52,7 +52,7 @@ This is an application built using python which allows the user play a game of H
 
 *Solved Problems*
 
-  * Heroku deploys started to fail . This was due to me adding a dependency to the requirements.txt file using an incorrect syntax. Heroku did not recognise the dependency and failed to deploy as a result. Reading the Heroku build logs gave an error which prompted me to double checy the syntax.
+  * Heroku deploys started to fail . This was due to me adding a dependency to the requirements.txt file using an incorrect syntax. Heroku did not recognise the dependency and failed to deploy as a result. Reading the Heroku build logs gave an error which prompted me to double check the syntax.
 
 **Validator Testing**
 

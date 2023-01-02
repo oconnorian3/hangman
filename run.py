@@ -52,10 +52,12 @@ def choose_word(words):
 
 """
 Function to begin the game itself
+Used Kylie Ying tutorial as referenced in the readme file 
+for assitance with the below function
 """
 
 
-def hangman():
+def hangman(): 
     word = choose_word(words)
     word_letter = set(word)
     alphabet = set(string.ascii_uppercase)
