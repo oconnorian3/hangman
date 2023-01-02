@@ -56,25 +56,7 @@ This is an application built using python which allows the user play a game of H
 
 **Validator Testing**
 
-* HTML
-   * No errors were retuned when passing through the official W3C validator
-
-```
-https://validator.w3.org/nu/?doc=https%3A%2F%2Foconnorian3.github.io%2Fallthingsspace%2Fyourimages.html
-```
-```
-https://validator.w3.org/nu/?doc=https%3A%2F%2Foconnorian3.github.io%2Fallthingsspace%2Fcontactus.html
-```
-```
-https://validator.w3.org/nu/?doc=https%3A%2F%2Foconnorian3.github.io%2Fallthingsspace%2Findex.html
-```
-
-* CSS
-   * No errors were retuned when passing through the official (Jigsaw) validator
-
-```
-https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Foconnorian3.github.io%2Fallthingsspace%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
-```
+* Ran code through https://pep8ci.herokuapp.com/ and its showing no errors
     
 * Accessibility
   * The colours and fonts are easy to read by passing it through the lighthouse in dev tools.
@@ -103,4 +85,4 @@ https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Foconnorian3.gith
 
   * Watched a tutorial by [Kylie Ying](https://www.youtube.com/watch?v=cJJTnI22IF8&list=PLqoebFJFAtg940mqPamWw4_ndWbnfqFqh) on YouTube
   
-  * Used the site [Random Word Generator](https://randomwordgenerator.com) to generate a list of 50 randowm words for the word.py file.
+  * Used the site [Random Word Generator](https://randomwordgenerator.com) to generate a list of 50 random words for the word.py file.
