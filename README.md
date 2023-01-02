@@ -32,7 +32,7 @@ This is an application built using python which allows the user play a game of H
 
     ![](assets/images/wingame.png)  
 
-    * The users lives are kept track off during the game.
+    * The users lives are kept track of during the game.
     * If the user enters a non alpha value or repeats a previous guess the game will not accept the answer and will ask them to guess again. 
 
     ![](assets/images/errormsg.png)
