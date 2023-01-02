@@ -41,6 +41,11 @@ This is an application built using python which allows the user play a game of H
 
     ![](assets/images/restartgame.png)
 
+ * Imported Libraries
+
+    * **OS** The OS module in Python provides functions for interacting with the operating system
+    * **STRING** Python String module contains some constants, utility function, and classes for string manipulation.
+    * **COLORAMA** The Colorama is one of the built-in Python modules to display the text in different colors. It is used to make the code more readable.
  
 # Testing #
 
@@ -56,12 +61,7 @@ This is an application built using python which allows the user play a game of H
 
 **Validator Testing**
 
-* Ran code through https://pep8ci.herokuapp.com/ and its showing no errors
-    
-* Accessibility
-  * The colours and fonts are easy to read by passing it through the lighthouse in dev tools.
-
-![](assets/images/Lighouthouse-score.png)     
+* Ran code through https://pep8ci.herokuapp.com/ and its showing no errors   
 
 # Deployment #
 
